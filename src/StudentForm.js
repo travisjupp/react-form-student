@@ -28,7 +28,7 @@ function StudentForm() {
 
   return (
     <>
-      <form onSubmit={handleSubmit} id="studentAdminForm">
+      <form onSubmit={handleSubmit} id="studentAdminForm" className={styles}>
         <label for="firstName">First Name: </label>
         <input
           type="text"

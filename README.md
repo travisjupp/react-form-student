@@ -1,3 +1,5 @@
 # Basic React form example: Student Admin
 
-https://ephemeral-semolina-ccd334.netlify.app/
+Controlled-component with state hook and CSS module.
+
+https://react-form-student.netlify.app/

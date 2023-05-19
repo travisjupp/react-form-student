@@ -19,12 +19,10 @@ function StudentForm() {
     }
 
     function handleSubmit(e) {
-        const result = document.getElementById("result");
+        const result = document.getElementById("confirmation");
         result.removeAttribute("hidden");
-        console.log("event obj", e.target);
         e.preventDefault();
     }
-    console.log("data", data);
 
     return (
         <>
@@ -96,11 +94,17 @@ function StudentForm() {
                     <input type="submit" id="submit" value="Submit" />
                 </form>
             </section>
-           
-            <section id="result" hidden>
-                {/* <h1>{JSON.stringify(data)}</h1> */}
-                <p>Student info for {data.firstName} {data.lastName} received.</p>
-                <p>Thank You</p>
+
+            <section id="confirmation" hidden>
+                <h3>Student info received:</h3>
+                <p>First Name: {data.firstName}</p>
+                <p>Last Name: {data.lastName}</p>
+                <p>Age: {data.age}</p>
+                <p>Address: {data.address}</p>
+                <p>Homeroom: {data.homeroom}</p>
+                <p>Student ID: {data.studentID}</p>
+                <p>Lunch Preference: {data.lunchOp}</p>
+                <p style={{ textAlign: "right" }}><em>Thank You!</em></p>
             </section>
         </>
     );
